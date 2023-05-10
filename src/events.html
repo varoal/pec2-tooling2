@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./assets/images/chess-pawn-icon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Chessy - Events</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <a href="./index.html" class="header__logo"><img src="./assets/images/chess-pawn-icon.png"
+                    class="navbar__img" alt="Pawn Icon" /></a>
+            <ul class="header__menu">
+                <li class="header__nav-item">
+                    <a href="./members.html" class="header__nav-link">Members</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./about.html" class="header__nav-link">About</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="./events.html" class="header__nav-link active">Events</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="main__title my-4">Upcoming Events</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/images/logo-chessy.png" alt="Chessy Club Logo" class="card__img">
+                        <div class="card__content">
+                            <h3 class="card__title">World Chess Championship 2023</h3>
+                            <p class="card__description">23/9/2023</p>
+                            <p class="card__description">An exciting annual event with top players from around the
+                                world.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#eventModal1">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/images/logo-chessy.png" alt="Chessy Club Logo" class="card__img">
+                        <div class="card__content">
+                            <h3 class="card__title">Regional Chess Tournament</h3>
+                            <p class="card__description">25/9/2023</p>
+                            <p class="card__description">Annual regional competition where you can get to know local
+                                chess enthusiasts.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#eventModal2">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="./assets/images/logo-chessy.png" alt="Chessy Club Logo" class="card__img">
+                        <div class="card__content">
+                            <h3 class="card__title">Youth Chess Open</h3>
+                            <p class="card__description">30/11/2023</p>
+                            <p class="card__description">A special event for young chess prodigies. Showcase your skills
+                                and learn from others.</p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#eventModal3">
+                                More Info
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="eventModal1" tabindex="-1" aria-labelledby="eventModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="eventModalLabel">Chess Championship 2023</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Join us for the annual Chess Championship 2023! Compete with top players from around
+                                    the world and test your skills. The event will be held on 23rd September 2023.
+                                    Registration starts from June 1st.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#joinModal" data-bs-dismiss="modal">Join Event</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="joinModal" tabindex="-1" aria-labelledby="joinModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="joinModalLabel">Join Event</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email"
+                                            aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone
+                                            else.</div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="eventModal2" tabindex="-1" aria-labelledby="eventModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="eventModalLabel2">Regional Chess Tournament</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Join chess enthusiasts from your region in this competition. This
+                                    tournament will be held on 25th September 2023. Registration
+                                    starts from July 15th.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#joinModal" data-bs-dismiss="modal">Join Event</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="eventModal3" tabindex="-1" aria-labelledby="eventModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="eventModalLabel3">Youth Chess Open</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>A special event for young chess prodigies. Showcase your skills and learn from
+                                    others. The event will be held on 30th November 2023. Registration starts from
+                                    August 1st.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#joinModal" data-bs-dismiss="modal">Join Event</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__form col-12 mt-4">
+                    <h2 class="mb-3">Stay Informed</h2>
+                    <form>
+                        <div class="main__form_form mb-3">
+                            <label for="emailUpdates" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailUpdates" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="emailUpdatesCheck">
+                            <label class="form-check-label" for="emailUpdatesCheck">I'd like to receive updates on
+                                future events</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <include src="./views/footer.html"></include>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/* Main */
+
+.main__title {
+  text-align: center;
+}
+
+.card {
+  background-color: $color-bg;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__content {
+    padding: 1.5rem;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  &__description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.main__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__form__form {
+  max-width: 400px;
+}

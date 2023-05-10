@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./assets/images/chess-pawn-icon.png">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Chessy</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <a href="./index.html" class="header__logo"><img src="./assets/images/chess-pawn-icon.png" class="navbar__img"
+          alt="Pawn Icon" /></a>
+      <ul class="header__menu">
+        <li class="header__nav-item">
+          <a href="./members.html" class="header__nav-link">Members</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./about.html" class="header__nav-link">About</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="./events.html" class="header__nav-link">Events</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1 class="main__title my-4">Welcome to Chessy</h1>
+    <section class="main__poster">
+      <div class="main__poster__image">
+        <img src="./assets/images/chess-playing-hand.webp" alt="Chess Board with someone playing chess">
+      </div>
+      <a href="./members.html" class="main__poster-link">
+        <div class="main__poster__text">Meet Our Members</div>
+      </a>
+      <a href="./about.html" class="main__poster-link">
+        <div class="main__poster__text">
+          Chessy Club
+        </div>
+      </a>
+      <a href="./events.html" class="main__poster-link">
+        <div class="main__poster__text">Next Event: September 23, 2023</div>
+      </a>
+    </section>
+  </main>
+
+  <include src="./views/footer.html">
+  </include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

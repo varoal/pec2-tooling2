@@ -1,0 +1,18 @@
+@use "sass:color";
+
+// Font families
+$font-family-sans-serif: "Arial", sans-serif;
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+// Colors
+$color-text: #333;
+$color-bg: #e4f1fd;
+$color-bg-lighter: lighten($color-bg, 10%);
+$color-bg-darker: darken($color-bg, 10%);
+$color-link: #297fca;
+$color-link-light: color.scale($color-link, $lightness: 50%);
+$blockquote-border-color: #007bff;
+$btn-primary-bg: #297fca;
+
+// Sizes
+$blockquote-font-size: 1.25rem;
